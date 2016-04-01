@@ -1,13 +1,12 @@
 $(document).ready(function() {
+    $('.mobile-menu-tog').after('<div id="mobile-menu">');
     $('#main-nav').find('ul').clone().appendTo('#mobile-menu');
 
 
     var $menu = $('#mobile-menu'),
         $html = $('html, body');
 
-
-
-    $menu.mmenu({
+    $('#mobile-menu').mmenu({
         extensions 	: [ "pageshadow" ],
         offCanvas	: {
             position 	: "right",

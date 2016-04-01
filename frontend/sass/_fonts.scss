@@ -1,26 +1,40 @@
-/* font-family: "Roboto"; */
+/* font-family: "RobotoRegular"; */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url("../fonts/Roboto.woff2") format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-weight: normal;
 }
-
-/* font-family: "Roboto"; */
+/* font-family: "RobotoLight"; */
 @font-face {
-  font-family: 'Roboto-Light';
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+  url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400;
-  src: local('Roboto-Light'), local('Roboto-Light'), url("../fonts/Roboto-Light.woff2") format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-weight: normal;
 }
-
-/* font-family: "Roboto"; */
+/* font-family: "RobotoMedium"; */
 @font-face {
-  font-family: 'Roboto-Bold';
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+  url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400;
-  src: local('Roboto-Bold'), local('Roboto-Bold'), url("../fonts/Roboto-Bold.woff2") format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+  url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

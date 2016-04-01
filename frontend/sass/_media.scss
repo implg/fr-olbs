@@ -8,6 +8,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+  .container {
+    width: 100%;
+  }
+
   .logo {
     margin-top: 8px;
     img {

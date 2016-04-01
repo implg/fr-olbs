@@ -9,7 +9,7 @@ const combine = require('stream-combiner2').obj;
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 // Assets path
-const assetsSrc = 'frontend/assets/**';
+const assetsSrc = 'frontend/assets/**/*.*';
 const assetsDest = 'public';
 
 // Sass path
@@ -62,7 +62,7 @@ gulp.task('js', function() {
     return combine(
         gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/jquery.mmenu/dist/js/jquery.mmenu.min.all.js',
+            'node_modules/jquery.mmenu/dist/js/jquery.mmenu.min.js',
             jsSrc
         ]),
         $.if(isDevelopment, $.sourcemaps.init()),
