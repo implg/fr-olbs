@@ -1,7 +1,8 @@
 @import "vars";
 @import "fonts";
 @import "../libs/bootstrap-custom/bootstrap.min";
-@import "media";
+@import "../../node_modules/jquery.mmenu/dist/css/jquery.mmenu.all";
+@import "sprite/sprite";
 
 h2, .h2 {
   font-size: 2.250em;
@@ -13,6 +14,10 @@ h2, .h2 {
   }
 }
 
+.text-right {
+  text-align: right;
+}
+
 .top-line {
   background: $top-and-bottom-bg;
 }
@@ -21,10 +26,14 @@ h2, .h2 {
   margin-top: 18px;
 }
 
-.main-nav {
+#main-nav {
+  text-align: right;
   ul {
     list-style-type: none;
+    display: inline-block;
+    padding: 0;
     margin: 0;
+    position: relative;
     li {
       display: inline-block;
       a {
@@ -33,7 +42,61 @@ h2, .h2 {
         color: #fff;
         font-size: 0.875em;
         text-transform: uppercase;
+        transition: all 0.5s;
+        &:hover{
+          text-decoration: none;
+          color: $blue-color;
+        }
+        &:focus {
+          text-decoration: none;
+        }
       }
+      &.active {
+        a {
+          color: $blue-color;
+        }
+      }
+    }
+    &:hover li.active a {
+      color: #fff;
     }
   }
 }
+
+.sliding-line {
+  height: 3px;
+  background: $blue-color;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+// Mobile menu
+
+#mobile-menu {
+  a {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Roboto-Light';
+    padding: 20px;
+    background: #f0f0f0;
+  }
+}
+
+.mobile-menu-tog {
+  @include sprite($mobile-toggle);
+  display: inline-block;
+  margin: 18px 0 13px;
+}
+
+.mm-menu.mm-offcanvas {
+  top: 52px;
+  background: #e2e2e2;
+}
+
+.mm-listview > li:not(.mm-divider):after {
+  left: 0;
+}
+
+
+@import "media";

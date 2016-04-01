@@ -60,7 +60,11 @@ gulp.task('sass', function () {
 // Js
 gulp.task('js', function() {
     return combine(
-        gulp.src(jsSrc),
+        gulp.src([
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/jquery.mmenu/dist/js/jquery.mmenu.min.all.js',
+            jsSrc
+        ]),
         $.if(isDevelopment, $.sourcemaps.init()),
         $.concat('main.js'),
         $.if(isDevelopment, $.sourcemaps.write()),
