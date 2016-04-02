@@ -1,7 +1,8 @@
 $(document).ready(function() {
+
+    // Mobile menu
     $('.mobile-menu-tog').after('<div id="mobile-menu">');
     $('#main-nav').find('ul').clone().appendTo('#mobile-menu');
-
 
     var $menu = $('#mobile-menu'),
         $html = $('html, body');
@@ -34,4 +35,7 @@ $(document).ready(function() {
             }, 25 );
         }
     });
+
+    // Wow init
+    new WOW().init();
 });

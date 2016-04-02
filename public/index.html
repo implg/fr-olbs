@@ -14,9 +14,14 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png">
     <link rel="stylesheet" href="/css/main.css">
+    <script>
+        window.addEventListener("beforeunload", function () {
+         document.body.classList.add("animate-out");
+        });
+    </script>
 </head>
 
-<body>
+<body class="animate-in">
 
     <!-- start header -->
     <header class="container-fluid top-line">
@@ -48,15 +53,96 @@
     </header>
     <!-- /. end header -->
 
+    <!-- start section our-ambition -->
     <section class="container-fluid our-ambition">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">qqq</div>
-                <div class="col-md-7">www</div>
+                <div class="col-md-5 text-layer wow fadeInLeft">
+                    <div class="big-text">
+                        Retail<br>data<br><span>laboratory</span>
+                    </div>
+                    <div class="sm-text">
+                        <p class="sm-text__title">Our ambition:</p>
+                        <p>We forecast the future and make it happen today</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="diagram">
+                        <div class="diagram__item-1 wow fadeIn" data-wow-delay="0.2s"></div>
+                        <div class="diagram__item-2 wow fadeIn" data-wow-delay="0.6s"></div>
+                        <div class="diagram__item-3 wow fadeIn" data-wow-delay="1.0s"></div>
+                        <div class="diagram__item-4 wow fadeIn" data-wow-delay="1.4s"></div>
+                        <div class="diagram__item-5 wow fadeIn" data-wow-delay="1.8s"></div>
+                        <div class="diagram__icon-1 wow fadeIn" data-wow-delay="2.4s"></div>
+                        <div class="diagram__icon-2 wow fadeIn" data-wow-delay="2.8s"></div>
+                        <div class="diagram__icon-3 wow fadeIn" data-wow-delay="3.2s"></div>
+                        <div class="diagram__icon-4 wow fadeIn" data-wow-delay="3.6s"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-1 wow fadeInDown" data-wow-delay="2.4s"></div>
+            <div class="line-2 wow fadeInUp" data-wow-delay="2.8s"></div>
+        </div>
+    </section>
+    <!-- /. end section our-ambition -->
+
+    <!-- start section why -->
+    <section class="container-fluid why">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="why__item">
+                        <h2>Why:</h2>
+                        <p>To change shopper experience making it enjoyable and efficient</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why__item">
+                        <h2>How:</h2>
+                        <p>Developing know-how business methodology supported by game-changing data science solutions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why__item">
+                        <h2>What:</h2>
+                        <p>The decision support system for FMCG retail</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- /. end section why -->
 
+    <!-- start section about-us -->
+    <section class="container-fluid about-us">
+        <div class="container wow zoomIn">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="blue">О компании</h2>
+                    <p><b>O:Labs</b> - это амбициозная команда профессионалов. Мы используем инновационные технологии для решения Ваших бизнес-задач. Нас вдохновляет Ваше желание расти и развиваться. Наши возможности опережают самые смелые ожидания бизнеса, а внушительный опыт делает Ваш прорыв на высококонкурентном рынке закономерным.</p>
+                    <p>Наша штаб квартира находится в Нью Йорке, также мы размещаемся еще в трех офисах: Москва, Краснодар, Киев.</p>
+                    <p>Мы гордимся нашим отделом продвинутой аналитики, объединившим одни из лучших умов в мире.</p>
+                    <p><b>Наша сильная сторона</b>: эффективная методология, усиленная Data Science инструментами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /. end section about-us -->
+
+    <!-- start section try-now -->
+    <!-- start section try-now -->
+    <section class="container-fluid try-now">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 no-pad"><div class="try-now__text"><b>Ваш бизнес будет работать</b> эффективнее!</div></div>
+                <div class="col-md-3 no-pad text-right"><a href="#" class="blue-btn wow flipInX">Попробовать сейчас</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- /. end section try-now -->
+
+
+    <div class="wow"></div>
 <script src="/js/main.js"></script>
 <!--[if lt IE 9]>
 <script src="/libs/html5shiv/es5-shim.min.js"></script>
