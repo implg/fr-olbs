@@ -80,7 +80,7 @@ h3, .h3 {
   text-transform: uppercase;
   color: #fff;
   padding: 17px 34px;
-  transition: all 0.5s;
+  transition: all 0.3s;
   border: 1px solid $blue-color;
   display: inline-block;
 
@@ -88,6 +88,30 @@ h3, .h3 {
     text-decoration: none;
     color: #fff;
     background: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.white-btn {
+  background: #fff;
+  text-transform: uppercase;
+  color: $main-color;
+  padding: 14px 23px;
+  transition: all 0.3s;
+  border: 1px solid #fff;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+  }
+
+  &:focus {
+    text-decoration: none;
   }
 }
 
@@ -474,6 +498,17 @@ h3, .h3 {
       font-size: 0.875em;
       color: #fff;
     }
+  }
+}
+
+// Footer
+
+.footer {
+  background: $top-and-bottom-bg;
+
+  &__nav {
+    @extend #main-nav;
+    text-align: left;
   }
 }
 
