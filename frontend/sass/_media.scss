@@ -8,9 +8,77 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-  .container {
-    width: 100%;
+  .container-fluid {
+    padding: 0;
   }
+
+  section .container {
+    padding: 0 44px;
+  }
+
+  .our-ambition {
+    min-height: 970px;
+    background-image: url(../images/our-ambition-bg-mob.jpg);
+
+    .big-text {
+      margin-top: 55px;
+    }
+    .sm-text {
+        margin-top: 38px;
+        p {
+          width: 290px;
+        }
+    }
+  }
+
+  .diagram__item-1, .diagram__item-2, .diagram__item-3, .diagram__item-4, .diagram__item-5,
+  .line-1, .line-2 {
+    display: none;
+  }
+
+  .diagram {
+    min-height: 419px;
+    position: static;
+
+    // Icons
+    &__icon-1 {
+      position: absolute;
+      top: auto;
+      bottom: 35px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+      background-image: url(../images/diagram-icon-1-mob.png);
+    }
+    &__icon-2 {
+      position: absolute;
+      top: auto;
+      left: 137px;
+      bottom: 111px;
+      width: 120px;
+      height: 120px;
+      background-image: url(../images/diagram-icon-2-mob.png);
+    }
+    &__icon-3 {
+      position: absolute;
+      top: auto;
+      bottom: 200px; 
+      left: 291px; 
+      width: 144px;
+      height: 144px;
+      background-image: url(../images/diagram-icon-3-mob.png);
+    }
+    &__icon-4 {
+      position: absolute;
+      top: auto;
+      left: 458px;
+      bottom: 299px;
+      width: 180px;
+      height: 180px;
+      background-image: url(../images/diagram-icon-4-mob.png);
+    }
+  }
+
 
   .logo {
     margin-top: 8px;
@@ -24,7 +92,6 @@
       text-align: left ;
     }
   }
-
 }
 
 /* Small Devices, Tablets */
