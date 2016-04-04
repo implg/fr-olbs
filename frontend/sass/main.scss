@@ -505,13 +505,30 @@ h3, .h3 {
 
 .footer {
   background: $top-and-bottom-bg;
+  padding-top: 26px;
 
   &__nav {
     @extend #main-nav;
     text-align: left;
+    border-bottom: 1px solid #262626;
+    li {
+      a {
+        padding: 22px 10px;
+      }
+    }
+  }
+
+  &__contact {
+    font-size: 1.500em;
+    .blue {
+      color: $blue-color;
+    }
+  }
+
+  &__copyrignt {
+    margin: 38px 0;
+    color: #fff;
   }
 }
-
-
 
 @import "media";
