@@ -8,11 +8,20 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
   .container-fluid {
     padding: 0;
   }
 
-  section .container {
+  section .container, .footer .container {
     padding: 0 44px;
   }
 
@@ -22,6 +31,9 @@
 
     .big-text {
       margin-top: 55px;
+      span {
+        background: none;
+      }
     }
     .sm-text {
         margin-top: 38px;
@@ -81,21 +93,120 @@
 
 
   .logo {
-    margin-top: 8px;
+    margin: 8px 0;
     img {
       width: 120px;
     }
   }
 
   .why {
+    padding-bottom: 30px;
     .text-center {
       text-align: left ;
+    }
+    &__item {
+      padding-left: 0;
+    }
+  }
+
+  .about-us {
+    background-image: url(../images/abou-us-bg-mob.jpg);
+    .container {
+      padding: 17px 44px 65px;
+      background: none;
+      color: #fff;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+
+  .try-now {
+    padding: 40px 0 50px;
+    .text-right {
+      text-align: left;
+    }
+    .blue-btn {
+      margin-top: 45px;
+    }
+  }
+
+  .products {
+    background-image: url(../images/products-bg-mob.jpg);
+
+    &__item {
+      min-height: 0;
+      margin-bottom: 65px;
+      p {
+        min-height: 0;
+      }
+    }
+    padding-top: 20px;
+    & [class^="col-"]:nth-child(2n) &__item {
+      padding-left: 0;
+    }
+
+    .btn-prod {
+      margin-top:20px;
+      padding: 12px 32px;
+      background: $blue-color;
+      color: #fff;
+      i {
+        display: none;
+      }
+    }
+  }
+
+  .partners {
+    padding-top: 7px;
+    padding-bottom: 45px;
+  }
+
+  .our-team {
+    background-image: url(../images/our-team-bg-mob.jpg);
+    background-size: cover;
+    .white-btn {
+      margin-top: 185px;
+    }
+  }
+
+  .footer {
+    padding-top: 36px;
+    &__nav {
+      padding-bottom: 30px;
+      ul {
+        li {
+          width: 33.33333333%;
+          float: left;
+          a {
+            padding: 7px 10px;
+          }
+        }
+      }
     }
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+  .our-ambition {
+    min-height: 970px;
+    background-image: url(../images/our-ambition-bg-mob-600.jpg);
+
+    .big-text {
+      margin-top: 55px;
+      span {
+        background: none;
+      }
+    }
+    .sm-text {
+      margin-top: 38px;
+      p {
+        width: 290px;
+      }
+    }
+  }
 
 }
 

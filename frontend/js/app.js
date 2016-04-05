@@ -21,8 +21,9 @@ $(document).ready(function() {
 
     var closer = null;
 
-    $('.mobile-menu-tog').on( 'click', function() {
+    $('.mobile-menu-tog-bot').on( 'click', function() {
         closer = $(this).attr( "href" );
+        $('.mobile-menu-tog').toggleClass('active');
     });
 
     API.bind( "closed", function() {
@@ -32,10 +33,13 @@ $(document).ready(function() {
                     scrollTop: $(closer).offset().top
                 });
                 closer = null;
+                $('.mobile-menu-tog').removeClass('active');
             }, 25 );
         }
     });
 
     // Wow init
-    new WOW().init();
+    new WOW().init({
+        mobile: false
+    });
 });

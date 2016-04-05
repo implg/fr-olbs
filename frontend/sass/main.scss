@@ -208,9 +208,20 @@ h3, .h3 {
 }
 
 .mobile-menu-tog {
-  @include sprite($mobile-toggle);
-  display: inline-block;
-  margin: 18px 0 13px;
+  width: 62px;
+  height: 52px;
+  text-align: center;
+  float: right;
+  margin-right: -10px;
+  position: relative;
+  &.active {
+    background: #2d2d2d;
+  }
+  &-bot {
+    @include sprite($mobile-toggle);
+    display: inline-block;
+    margin: 18px 0 13px;
+  }
 }
 
 .mm-menu.mm-offcanvas {
@@ -337,6 +348,11 @@ h3, .h3 {
     width: 73px;
     height: 73px;
     background-image: url(../images/diagram-icon-1.png);
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   &__icon-2 {
     position: absolute;
@@ -345,6 +361,11 @@ h3, .h3 {
     width: 91px;
     height: 91px;
     background-image: url(../images/diagram-icon-2.png);
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   &__icon-3 {
     position: absolute;
@@ -353,6 +374,11 @@ h3, .h3 {
     width: 109px;
     height: 110px;
     background-image: url(../images/diagram-icon-3.png);
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   &__icon-4 {
     position: absolute;
@@ -361,6 +387,11 @@ h3, .h3 {
     width: 164px;
     height: 164px;
     background-image: url(../images/diagram-icon-4.png);
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -413,7 +444,7 @@ h3, .h3 {
   &__text {
     font-size: 36px;
     color: #fff;
-    font-family: 'RobotoLight', sans-serif;
+    font-family: 'RobotoThin', sans-serif;
   }
 
 }
