@@ -17,6 +17,10 @@
     animation: none !important;
   }
 
+  .no-pad {
+    padding: 0 10px;
+  }
+
   .container-fluid {
     padding: 0;
   }
@@ -56,8 +60,8 @@
     &__icon-1 {
       position: absolute;
       top: auto;
-      bottom: 35px;
-      left: 10px;
+      bottom: 42px;
+      left: 23px;
       width: 100px;
       height: 100px;
       background-image: url(../images/diagram-icon-1-mob.png);
@@ -65,8 +69,8 @@
     &__icon-2 {
       position: absolute;
       top: auto;
-      left: 137px;
-      bottom: 111px;
+      left: 157px;
+      bottom: 120px;
       width: 120px;
       height: 120px;
       background-image: url(../images/diagram-icon-2-mob.png);
@@ -168,6 +172,9 @@
     .white-btn {
       margin-top: 185px;
     }
+    &__item {
+      min-height: 295px;
+  }
   }
 
   .footer {
@@ -190,27 +197,126 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+  section .container, .footer .container {
+    max-width: 600px;
+    padding: 0 38px;
+  }
+
   .our-ambition {
-    min-height: 970px;
+    min-height: 1000px;
     background-image: url(../images/our-ambition-bg-mob-600.jpg);
 
     .big-text {
-      margin-top: 55px;
+      margin-top: 68px;
       span {
-        background: none;
       }
     }
     .sm-text {
-      margin-top: 38px;
       p {
-        width: 290px;
+        width: 275px;
       }
+    }
+  }
+
+  .diagram {
+    min-height: 419px;
+
+    // Icons
+    &__icon-1 {
+      bottom: 92px;
+      left: 10px;
+      width: 78px;
+      height: 78px;
+      background-size: 100% 100%;
+    }
+    &__icon-2 {
+      left: 110px;
+      bottom: 154px;
+      width: 95px;
+      height: 95px;
+      background-size: 100% 100%;
+    }
+    &__icon-3 {
+      bottom: 217px;
+      left: 223px; 
+      width: 109px;
+      height: 110px;
+      background-size: 100% 100%;
+    }
+    &__icon-4 {
+      left: 340px;
+      bottom: 282px;
+      width: 164px;
+      height: 164px;
+      background-size: 100% 100%;
+    }
+  }
+
+  .partners {
+    img {
+      max-width: 100%;
+    }
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+
+  section .container, .footer .container, header .container {
+    max-width: 480px;
+    padding: 0 15px;
+  }
+
+  .mobile-menu-tog {
+    margin-right: -15px;
+  }
+
+  .our-ambition {
+    min-height: 745px;
+    background-image: url(../images/our-ambition-bg-mob-480.jpg);
+
+    .big-text {
+      margin-top: 34px;
+      span {
+      }
+    }
+    .sm-text {
+      margin-top: 30px;
+      color: #00ace0;
+      p {
+        width: 275px;
+            margin-top: 0;
+    margin-bottom: 0;
+      }
+    }
+  }
+
+  .diagram {
+    min-height: 370px;
+
+    // Icons
+    &__icon-1 {
+      bottom: 90px;
+      left: 10px;
+    }
+    &__icon-2 {
+      left: 91px;
+      bottom: 137px;
+    }
+    &__icon-3 {
+      bottom: 192px;
+      left: 185px;
+    }
+    &__icon-4 {
+      left: 284px;
+      bottom: 245px;
     }
   }
 
 }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 }
