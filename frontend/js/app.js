@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // Mobile menu
-    $('.mobile-menu-tog').after('<div id="mobile-menu">');
+    $('.mobile-menu-tog').after('<div id="mobile-menu"></div>');
     $('#main-nav').find('ul').clone().appendTo('#mobile-menu');
 
     var $menu = $('#mobile-menu'),

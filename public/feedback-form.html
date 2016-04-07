@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Olabs - contacts</title>
+    <title>Olabs</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,49 +54,43 @@
         </div>
     </header>
     <!-- /. end header -->
-    
-    <!-- start main section -->
-    <section class="container-fluid page-contacts">
+
+    <!-- start section feedback-form -->
+    <section class="container-fluid page-feedback-form">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 page-contacts__text">
-                    <h1>Контакты</h1>
-                    <p><span class="blue">E-mail:</span> info@o-labs.ru<br>
-                    <span class="blue">Телефон:</span> +7 (495) 229-11-60</p>
-
-                    <p>123290, Москва, 1-й Магистральный туп.,<br>
-                    д.5А, Бизнес-центр "Магистраль-Плаза", <br>
-                    2 этаж, офис С-203</p>
-                </div>
-                <div class="col-md-7 ">
-                    <p class="h1">Форма обратной связи</p>
-                    <form action="" method="post" class="form-contacts wow zoomIn">
-                        <div class="row feedback-form__form">
-                            <div class="col-md-12 col-sm-12">
-                                <input type="text" name="name" placeholder="Имя *" required/>
-                                <input type="text" name="email" placeholder="E-mail *" required/>
-                                <input type="text" name="subject" placeholder="Тема *" required/>
-                                <textarea name="message" placeholder="Сообщение *" required></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <input type="checkbox" id="send-me-copy" checked="checked" />
-                                <label for="send-me-copy">Отправить копию этого сообщения на ваш адрес</label>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <div class="message"><span>*</span> Поля объязательные для заполнения</div>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="submit" class="blue-btn" value="Отправить">
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-md-6 col-sm-12"><h1>Форма обратной связи</h1></div>
+                <div class="col-md-6 text-right hidden-sm hidden-xs">
+                    <div class="message">* Поля объязательные для заполнения</div>
                 </div>
             </div>
+            <form action="" method="post" class="form-contacts wow zoomIn">
+                <div class="row feedback-form__form">
+                    <div class="col-md-6 col-sm-12">
+                        <input type="text" name="name" placeholder="Имя *" required/>
+                        <input type="text" name="email" placeholder="E-mail *" required/>
+                        <input type="text" name="subject" placeholder="Тема *" required/>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <textarea name="message" placeholder="Сообщение *" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <input type="checkbox" id="send-me-copy" checked="checked" />
+                        <label for="send-me-copy">Отправить копию этого сообщения на ваш адрес</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <input type="submit" class="blue-btn" value="Отправить">
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right hidden-md hidden-lg">
+                        <div class="message"><span>*</span> Поля объязательные для заполнения</div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- /. end main section -->
+    <!-- /. end section feedback-form -->
 
     <!-- start footer -->
     <footer class="container-fluid footer">

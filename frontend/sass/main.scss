@@ -27,12 +27,25 @@
   to { opacity: 1; }
 }
 
+.bg-black {
+  min-height: 100%;
+  background: #000;
+}
+
 .wow {
   visibility:hidden;
 }
 
 .container {
   max-width: 100%;
+}
+
+h1, .h1 {
+  font-family: 'RobotoLight', sans-serif;
+  font-size: 2.250em;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 0px;
 }
 
 h2, .h2 {
@@ -482,6 +495,7 @@ h3, .h3 {
 // Section partners
 
 .partners {
+  background: #fff;
   padding-bottom: 58px;
   h2 {
     margin-bottom: 55px;
@@ -562,4 +576,5 @@ h3, .h3 {
 }
 
 @import "page-contacts";
+@import "page-feedback-form";
 @import "media";

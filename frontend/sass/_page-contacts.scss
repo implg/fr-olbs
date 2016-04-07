@@ -1,4 +1,19 @@
 .page-contacts {
   min-height: 846px;
-  background-image: url(../images/page-contacts-bg.jpg)
+  background-image: url(../images/pages/page-contacts-bg.jpg);
+  padding-top: 87px;
+
+  h1, .h1 {
+	color:#000;
+	margin-bottom: 25px;
+  }
+
+  &__text {
+  	span.blue {
+  		color: $blue-color;
+  	}
+  	p {
+  		margin-bottom: 25px;
+  	}
+  }
 }

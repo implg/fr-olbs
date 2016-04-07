@@ -59,37 +59,38 @@
     <section class="container-fluid page-contacts">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5 page-contacts__text">
                     <h1>Контакты</h1>
-                    <p>E-mail: info@o-labs.ru<br>
-                    Телефон: +7 (495) 229-11-60</p>
+                    <p><span class="blue">E-mail:</span> info@o-labs.ru<br>
+                    <span class="blue">Телефон:</span> +7 (495) 229-11-60</p>
 
                     <p>123290, Москва, 1-й Магистральный туп.,<br>
                     д.5А, Бизнес-центр "Магистраль-Плаза", <br>
                     2 этаж, офис С-203</p>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 ">
                     <p class="h1">Форма обратной связи</p>
-                    <form>
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Check me out
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
+                    <form action="" method="post" class="form-contacts wow zoomIn">
+                        <div class="row feedback-form__form">
+                            <div class="col-md-12 col-sm-12">
+                                <input type="text" name="name" placeholder="Имя *" required/>
+                                <input type="text" name="email" placeholder="E-mail *" required/>
+                                <input type="text" name="subject" placeholder="Тема *" required/>
+                                <textarea name="message" placeholder="Сообщение *" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <input type="checkbox" id="send-me-copy" checked="checked" />
+                                <label for="send-me-copy">Отправить копию этого сообщения на ваш адрес</label>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <div class="message"><span>*</span> Поля объязательные для заполнения</div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="blue-btn" value="Отправить">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
