@@ -79,7 +79,7 @@ h3, .h3 {
   background: $blue-color;
   text-transform: uppercase;
   color: #fff;
-  padding: 17px 34px;
+  padding: 17px 30px;
   transition: all 0.3s;
   border: 1px solid $blue-color;
   display: inline-block;
@@ -200,7 +200,7 @@ h3, .h3 {
 #mobile-menu {
   a {
     color: #000;
-    font-size: 20px;
+    font-size: 1.250em;
     font-family: 'RobotoLight', sans-serif;
     padding: 20px;
     background: #f0f0f0;
@@ -252,7 +252,7 @@ h3, .h3 {
   }
 
   .big-text {
-    font-size: 60px;
+    font-size: 3.750em;
     font-family: 'RobotoLight', sans-serif;
     text-transform: uppercase;
     color:#000;
@@ -264,7 +264,7 @@ h3, .h3 {
   }
 
   .sm-text {
-    font-size: 24px;
+    font-size: 1.500em;
     color: $blue-color;
     font-family: 'RobotoLight', sans-serif;
     margin-top: 140px;
@@ -442,7 +442,7 @@ h3, .h3 {
   padding: 65px 10px;
 
   &__text {
-    font-size: 36px;
+    font-size: 2.250em;
     color: #fff;
     font-family: 'RobotoThin', sans-serif;
   }
@@ -561,4 +561,5 @@ h3, .h3 {
   }
 }
 
+@import "page-contacts";
 @import "media";

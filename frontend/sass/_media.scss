@@ -171,10 +171,11 @@
     background-size: cover;
     .white-btn {
       margin-top: 185px;
+      padding: 14px 15px;
     }
     &__item {
-      min-height: 295px;
-  }
+      min-height: 305px
+    }
   }
 
   .footer {
@@ -195,7 +196,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 
   section .container, .footer .container {
     max-width: 600px;
@@ -262,11 +263,15 @@
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 599px) {
 
   section .container, .footer .container, header .container {
     max-width: 480px;
     padding: 0 15px;
+  }
+
+  .about-us .container {
+    padding: 17px 15px 65px;
   }
 
   .mobile-menu-tog {
@@ -315,9 +320,154 @@
     }
   }
 
+  .products [class^="col-"] {
+    padding: 0 10px;
+  }
+
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 479px) {
+
+  section .container, .footer .container, header .container {
+    max-width: 320px;
+  }
+
+  .our-ambition {
+    min-height: 457px;
+    background-image: url(../images/our-ambition-bg-mob-320.jpg);
+
+    .big-text {
+      margin-top: 34px;
+      font-size: 2.625em;
+      line-height: 48px;
+      span {
+      }
+    }
+    .sm-text {
+      margin-top: 30px;
+      color: #00ace0;
+      font-size: 1.125em;
+      p {
+        width: 210px;
+      }
+    }
+  }
+
+  .diagram {
+    min-height: 160px;
+    // Icons
+    &__icon-1 {
+      bottom: 52px;
+      left: 5px;
+      width: 52px;
+      height: 52px;
+      background-image: url(../images/diagram-icon-1-mob-320.png);
+    }
+    &__icon-2 {
+      left: 69px;
+      bottom: 41px;
+      width: 75px;
+      height: 75px;
+      background-image: url(../images/diagram-icon-2-mob-320.png);
+    }
+    &__icon-3 {
+      bottom: 52px; 
+      left: 164px; 
+      width: 52px;
+      height: 52px;
+      background-image: url(../images/diagram-icon-3-mob-320.png);
+    }
+    &__icon-4 {
+      left: 231px;
+      bottom: 52px;
+      width: 52px;
+      height: 52px;
+      background-image: url(../images/diagram-icon-4-mob-320.png);
+    }
+  }
+
+  .footer {
+
+    &__contact {
+      width: 100%;
+      font-size: 1.250em;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__nav ul li {
+      width: 50%;
+      a {
+        padding: 7px 9px;
+      }
+    }
+  }
+
+  .our-team {
+    min-height: 1160px;
+    & [class^="col-"] {
+      width: 100%;
+    }
+    h2 {
+      margin-bottom: 10px;
+      margin-top: 40px;
+    }
+    &__item {
+      min-height: 0;
+      &-img{
+        display: none;
+      }
+      h3 {
+        font-size: 1.250em;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 5px;
+      }
+    }
+
+    &__call {
+      width: 100%;
+      .white-btn{
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .partners {
+    & [class^="col-"] {
+      width: 50%;
+    }
+  }
+
+  .products {
+    font-size: 0.875em;
+  }
+
+  .try-now {
+    &__text {
+      font-size: 1.500em;
+    }
+  } 
+
+  .blue-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us {
+    font-size: 0.875em;
+    .container {
+        padding: 17px 15px 45px;
+    }
+  }
+
+  .why {
+    font-size: 0.875em;
+  }
 
 }
 
