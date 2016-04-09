@@ -1,6 +1,8 @@
 .page-contacts {
   min-height: 846px;
   background-image: url(../images/pages/page-contacts-bg.jpg);
+  background-position: top center;
+  background-size: cover;
   padding-top: 87px;
 
   h1, .h1 {
@@ -16,4 +18,26 @@
   		margin-bottom: 25px;
   	}
   }
+
+  .message {
+  	color: #000;
+  	span {
+  		color: $blue-color;
+  	}
+  }
+  .desk-hide {
+  	display: none;
+  }
+
+  	.form-contacts [type="checkbox"]:not(:checked) + label, .form-contacts [type="checkbox"]:checked + label {
+	    margin-top: 0;
+	}
+
+	.blue-btn {
+		margin-top: 30px;
+	}
+
+	.form-contacts textarea {
+	    margin-bottom: 30px;
+	}
 }

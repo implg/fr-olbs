@@ -6,7 +6,7 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 990px) {
 
   .wow {
     visibility: visible !important;
@@ -200,6 +200,14 @@
     }
   }
 
+  .page .container {
+    max-width: 100%;
+  }
+
+  .footer .container, header .container {
+    padding: 0 18px;
+  }
+
   // Page feedback-form
   .page-feedback-form {
     padding: 30px 10px 50px;
@@ -230,7 +238,29 @@
   .form-contacts textarea {
     margin-bottom: 28px;
   }
+  
+  // Page contacts
+  .page-contacts {
+    padding: 50px 0;
+    background-position: left;
 
+    &__text {
+      padding-left: 40px;
+    }
+
+    .h1 {
+      padding-left: 30px;
+    }
+
+    .message {
+      color: #000;
+      margin-top: 33px;
+    }  
+
+    .blue-btn {
+      margin-top: 0;
+    }
+  }
 
 }
 
@@ -298,6 +328,13 @@
     }
   }
 
+  // Page contacts
+  .page-contacts {
+    padding: 37px 0 50px;
+    .container {
+      padding: 0 18px;
+    }
+  }
 
 }
 
@@ -306,7 +343,6 @@
 
   section .container, .footer .container, header .container {
     max-width: 480px;
-    padding: 0 15px;
   }
 
   .about-us .container {
@@ -331,8 +367,8 @@
       color: #00ace0;
       p {
         width: 275px;
-            margin-top: 0;
-    margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -377,6 +413,26 @@
       margin-top: 16px;
       padding-left: 55px;
       text-align: left;
+    }
+  }
+
+  // Page contacts
+  .page-contacts {
+    padding: 37px 0 0;
+    background-position: left -223px;
+    overflow: hidden;
+    .container {
+      padding: 0;
+    }
+
+    .message {
+      text-align: left;
+      padding-left: 70px;
+      margin-top: 16px;
+      span {
+        display: inline-block;
+        margin-left: -8px;
+      }
     }
   }
 
@@ -560,6 +616,39 @@
         display: none;
       }
     }
+  }
+
+  // Page contacts
+  .page-contacts {
+    background-position: left -290px;
+    .h1 {
+      padding: 0 18px;
+      margin-bottom: 5px;
+      line-height: 42px;
+    }
+    &__text {
+      padding: 0 28px;
+    }
+
+    .form-contacts {
+      padding: 40px 18px;
+      .col-xs-6 {
+        width: 100%;
+      }
+      .text-right {
+        display: none;
+      }
+    }
+
+    .desk-hide {
+      display: block;
+      font-size: 0.750em;
+      text-align: left;
+      padding: 0 28px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    } 
+    
   }
 
 }

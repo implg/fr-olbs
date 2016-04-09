@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body class="animate-in">
+<body class="page animate-in">
 
     <!-- start header -->
     <header class="container-fluid top-line">
@@ -59,7 +59,7 @@
     <section class="container-fluid page-contacts">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 page-contacts__text">
+                <div class="col-md-4 page-contacts__text">
                     <h1>Контакты</h1>
                     <p><span class="blue">E-mail:</span> info@o-labs.ru<br>
                     <span class="blue">Телефон:</span> +7 (495) 229-11-60</p>
@@ -68,8 +68,9 @@
                     д.5А, Бизнес-центр "Магистраль-Плаза", <br>
                     2 этаж, офис С-203</p>
                 </div>
-                <div class="col-md-7 ">
+                <div class="col-md-8 ">
                     <p class="h1">Форма обратной связи</p>
+                    <div class="message desk-hide"><span>*</span> Поля обязательные для заполнения</div>
                     <form action="" method="post" class="form-contacts wow zoomIn">
                         <div class="row feedback-form__form">
                             <div class="col-md-12 col-sm-12">
@@ -80,15 +81,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
                                 <input type="checkbox" id="send-me-copy" checked="checked" />
                                 <label for="send-me-copy">Отправить копию этого сообщения на ваш адрес</label>
                             </div>
-                            <div class="col-md-6 text-right">
-                                <div class="message"><span>*</span> Поля объязательные для заполнения</div>
+                            <div class="col-md-5 hidden-sm hidden-xs text-right">
+                                <div class="message"><span>*</span> Поля обязательные для заполнения</div>
                             </div>
-                            <div class="col-md-12">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-6">
                                 <input type="submit" class="blue-btn" value="Отправить">
+                            </div>
+                            <div class="col-sm-6 col-xs-6 hidden-md hidden-lg text-right">
+                                <div class="message"><span>*</span> Поля обязательные для заполнения</div>
                             </div>
                         </div>
                     </form>

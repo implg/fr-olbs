@@ -182,7 +182,7 @@ h3, .h3 {
         transition: all 0.5s;
         &:hover{
           text-decoration: none;
-          color: $blue-color;
+          color: $blue-color !important;
         }
         &:focus {
           text-decoration: none;
