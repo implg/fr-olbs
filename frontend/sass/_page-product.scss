@@ -1,0 +1,18 @@
+.page-product {
+	background-image: url(../images/pages/page-product-bg.jpg);
+	background-size: cover;
+	background-position: top center;
+	padding: 100px 0 80px;
+	h1 {
+		color:#000;
+		text-transform: uppercase;
+		b {
+			font-family: "RobotoBold";
+		}
+	}
+
+	&__img {
+		float: left;
+		padding:  32px 0 0 0;
+	}
+}
