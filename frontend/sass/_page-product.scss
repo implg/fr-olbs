@@ -1,18 +1,75 @@
 .page-product {
-	background-image: url(../images/pages/page-product-bg.jpg);
-	background-size: cover;
-	background-position: top center;
-	padding: 100px 0 80px;
+	background-color: $bg-gray;
+	background-image: url(../images/pages/page-product-bg.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 87px 0 50px;
+	overflow: hidden;
+	color:#000;
 	h1 {
+		margin-bottom: 40px;
 		color:#000;
 		text-transform: uppercase;
+		line-height: 46px;
 		b {
 			font-family: "RobotoBold";
 		}
 	}
 
+	&__text {
+		position: relative;
+		z-index: 10;
+	}
+
+	ul {
+		padding-left: 0;
+    	overflow: hidden;
+    	margin-bottom: 25px;
+		li {
+			list-style: none;
+			background: url(../images/pages/product-content-marker.png) no-repeat 0 11px; 
+			padding-left: 13px;
+		}
+	}
+
+	.blue {
+		color: $blue-color;
+		span {
+			color: #000;
+		}
+	}
+
 	&__img {
 		float: left;
-		padding:  32px 0 0 0;
+		padding:  32px 140px 113px 26px;
+		position: relative;
+		z-index: 1;
+		&-line1 {
+			position: absolute;
+			background-image: url(../images/pages/product-content-line-1.png);
+			background-repeat: no-repeat;
+			width: 402px;
+			height: 402px;
+			top: -4px;
+			left: -18px;
+		}
+		&-line2 {
+			position: absolute;
+			background-image: url(../images/pages/product-content-line-2.png);
+			background-repeat: no-repeat;
+			width: 499px;
+			height: 499px;
+			top: -53px;
+			left: -65px;
+		}
+		&-line3 {
+			position: absolute;
+			background-image: url(../images/pages/product-content-line-3.png);
+			background-repeat: no-repeat;
+			width: 835px;
+			height: 667px;
+			top: -100px;
+			left: -226px;
+		}
 	}
 }

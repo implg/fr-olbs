@@ -1,9 +1,11 @@
 .page-contacts {
-  min-height: 846px;
-  background-image: url(../images/pages/page-contacts-bg.jpg);
-  background-position: top center;
-  background-size: cover;
-  padding-top: 87px;
+  	min-height: 846px;
+  	background-color: $bg-gray;
+	background-image: url(../images/pages/page-contacts-bg.png);
+	background-repeat: no-repeat;
+	background-position: top center; 
+	background-size: cover;
+ 	padding-top: 87px;
 
   h1, .h1 {
 	color:#000;

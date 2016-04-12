@@ -246,7 +246,9 @@
   // Page contacts
   .page-contacts {
     padding: 50px 0;
-    background-position: left;
+    background-image: url(../images/pages/page-contacts-bg-768.png);
+    background-position: top left;
+    background-size: inherit;
 
     &__text {
       padding-left: 40px;
@@ -263,6 +265,12 @@
 
     .blue-btn {
       margin-top: 0;
+    }
+  }
+
+  .page-product {
+    &__img {
+      float: none;
     }
   }
 
