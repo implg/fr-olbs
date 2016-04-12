@@ -112,8 +112,10 @@
 }
 
 .page-feedback-form {
-	background-image: url(../images/pages/page-feedback-form-bg.jpg);
+	background-color: $blue-color;
+	background-image: url(../images/pages/page-feedback-form-bg.png);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top center;
 	min-height: 606px;
 	padding: 90px 10px 100px;

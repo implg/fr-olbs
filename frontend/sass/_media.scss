@@ -120,7 +120,7 @@
   }
 
   .about-us {
-    background-image: url(../images/abou-us-bg-mob.jpg);
+    background-position: -345px;
     .container {
       padding: 17px 44px 65px;
       background: none;
@@ -142,7 +142,7 @@
   }
 
   .products {
-    background-image: url(../images/products-bg-mob.jpg);
+    background-image: url(../images/products-bg-mob.png); 
 
     &__item {
       min-height: 0;
@@ -152,8 +152,8 @@
       }
     }
     padding-top: 20px;
-    & [class^="col-"]:nth-child(2n) &__item {
-      padding-left: 0;
+    & [class^="col-"]:nth-child(2n) &__item { 
+      padding-left: 0; 
     }
 
     .btn-prod {
@@ -177,7 +177,7 @@
   }
 
   .our-team {
-    background-image: url(../images/our-team-bg-mob.jpg);
+    background-image: url(../images/our-team-bg-mob.png);
     background-size: cover;
     .white-btn {
       margin-top: 185px;
@@ -215,7 +215,10 @@
   // Page feedback-form
   .page-feedback-form {
     padding: 30px 10px 50px;
+    background-image: url(../images/pages/page-feedback-form-bg-mob.png);
     background-position: top left;
+    background-size: 100% auto;
+
     .container {
       padding: 0 10px;
       box-sizing: border-box;
@@ -251,10 +254,11 @@
     background-size: inherit;
 
     &__text {
-      padding-left: 40px;
+      padding-left: 45px;
     }
 
     .h1 {
+      margin-top: 20px;
       padding-left: 30px;
     }
 
@@ -281,7 +285,7 @@
 
   section .container, .footer .container {
     max-width: 600px;
-    padding: 0 18px;
+    padding: 0 44px;
   }
 
   .our-ambition {
@@ -348,13 +352,19 @@
     }
   }
 
+  // Page feedback-form
+  .page-feedback-form {
+    background-size: 100% 90%;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 599px) {
 
-  section .container, .footer .container, header .container {
+  section .container, .footer .container {
     max-width: 480px;
+    padding: 0 24px;
   }
 
   .about-us .container {
@@ -407,17 +417,24 @@
     }
   }
 
+  .about-us {
+    background-position: -450px;
+  }
+
   .products [class^="col-"] {
     padding: 0 10px;
   }
 
   // Page feedback-form
   .page-feedback-form {
-    background-image: url(../images/pages/page-feedback-form-bg-480.jpg);
+    background-image: url(../images/pages/page-feedback-form-bg-480.png);
+    background-size: cover; 
+    padding: 35px 0 100px;
+    overflow: hidden;
     h1 {
       padding-left: 30px;
     }
-    padding: 30px 0 50px;
+    
     .container {
       padding: 0;
     }
@@ -448,12 +465,22 @@
     }
   }
 
+  .footer__nav ul li a {
+      padding: 7px 7px;
+  }
+
 }
 
 @media only screen and (max-width : 479px) {
 
-  section .container, .footer .container, header .container {
+  section .container, .footer .containe {
     max-width: 320px;
+    padding: 0 14px;
+  }
+
+  header .container {
+    max-width: 320px;
+
   }
 
   .our-ambition {
@@ -577,12 +604,13 @@
     }
   } 
 
-  .blue-btn {
+  .blue-btn { 
     width: 100%;
     text-align: center;
   }
 
   .about-us {
+    background-position: -661px;
     font-size: 0.875em;
     .container {
         padding: 17px 15px 45px;

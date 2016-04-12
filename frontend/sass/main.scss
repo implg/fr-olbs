@@ -433,14 +433,22 @@ h3, .h3 {
 // Section About Us
 
 .about-us {
-  background-image: url(../images/abou-us-bg.jpg);
-  background-size: cover;
-  background-position: top center;
+  background-color: $blue-color;
+  background-image: url(../images/abou-us-bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   padding: 80px 10px;
+  color: #000;
   
   .container {
     background: #fff;
     padding: 40px 145px 40px 50px;
+
+    p {
+      margin-bottom: 0px;
+      margin-top: 4px;
+    }
   }
 
   h2 {
@@ -465,7 +473,8 @@ h3, .h3 {
 // Section products
 
 .products {
-  background-image: url(../images/products-bg.jpg);
+  background-color: $bg-gray;
+  background-image: url(../images/products-bg.png);
   background-size: cover;
   background-position: top center;
   min-height: 800px;
@@ -505,7 +514,9 @@ h3, .h3 {
 // Section our-team
 
 .our-team {
-  background-image: url(../images/our-team-bg.jpg);
+  background-color: $main-color;
+  background-image: url(../images/our-team-bg.png);
+  background-size: cover;
   background-position: top center;
   min-height: 1360px;
 
