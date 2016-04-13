@@ -61,7 +61,6 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
     return combine(
         gulp.src([
-            'frontend/libs/modernizr/modernizr.js',
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/jquery.mmenu/dist/js/jquery.mmenu.min.js',
             'node_modules/wow.js/dist/wow.min.js',
