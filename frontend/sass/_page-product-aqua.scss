@@ -1,13 +1,28 @@
-.page-product-aqua {
-	background-color: $blue-color;
+.page-prod-aqua {
+	background-color: $bg-product-aqua; 
+	background-image: url(../images/pages/page-product-aqua-bg.png);
+	background-position: left top;
+	background-repeat: no-repeat;
 	padding: 80px 10px;
-
-	.container {
-		background-color: #FFF;
-	}
+	color: #000;
 
 	h1 {
 		color: #0095d6;
 		text-transform: uppercase;
+		margin-bottom: 20px;
 	}
+
+	&__head {
+		
+		img {
+			width: 175px;
+			margin-right: -8px;
+		}
+	}
+
+	&__content {
+		background-color: #FFF;
+		padding: 50px;
+	}
+
 }
