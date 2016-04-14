@@ -272,9 +272,45 @@
     }
   }
 
+  // Page product
   .page-product {
+    background-position: -275px top;
+    padding-bottom: 20px;
+
+    .container, & + .footer .container  {
+      padding: 0px 70px;
+    }
+
+    h1 {
+      width: 375px;
+    }
+
     &__img {
       float: none;
+      padding-left: 0;
+      padding-right: 0;
+      img {
+        margin-left: -35px;
+      }
+
+      &-line1 {
+        background-size: 422px 422px;
+        width: 422px;
+        height: 422px;
+        top: -19px;
+        left: -91px;
+      }
+
+      &-line2 {
+        top: -56px;
+        left: -129px;
+      }
+
+      &-line3 {
+        background-image: url(../images/pages/product-content-line-3-768.png);
+        left: 348px;
+        top: -56px;
+      }
     }
   }
 
@@ -356,6 +392,19 @@
   .page-feedback-form {
     background-size: 100% 90%;
   }
+
+  // Page product
+  .page-product {
+    .container, & + .footer .container  {
+      padding: 0px 50px;
+    }
+
+    &__img-line3 {
+      background-image: url(../images/pages/product-content-line-3-768.png);
+      left: 350px;
+      top: -49px;
+    }
+  } 
 
 }
 
@@ -468,6 +517,13 @@
   .footer__nav ul li a {
       padding: 7px 7px;
   }
+
+  // Page product
+  .page-product {
+    .container, & + .footer .container  {
+      padding: 0px 30px;
+    }
+  } 
 
 }
 
@@ -690,6 +746,58 @@
     } 
     
   }
+
+  // Page product
+  .page-product {
+    font-size: 0.875em;
+    line-height: 24px;
+    background-position: -490px top;
+
+    .container, & + .footer .container  {
+      padding: 0px 18px;
+    }
+
+    h1 {
+      width: 269px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__img {
+      padding-bottom: 86px;
+
+      img {
+        margin-left: 0;
+        width: 270px;
+      }
+
+      &-line1 {
+        background-size: 100%;
+        width: 380px;
+        height: 380px;
+        top: -43px;
+        left: -59px;
+      }
+
+      &-line2 {
+        top: -64px;
+        left: -83px;
+        width: 430px;
+        height: 430px;
+        background-size: 100%;
+      }
+
+      &-line3 {
+        background-image: url(../images/pages/product-content-line-3-320.png);
+        width: 236px;
+        height: 164px;
+        left: 164px;
+        top: 278px;
+      }
+    }
+
+    
+  } 
 
 }
 
