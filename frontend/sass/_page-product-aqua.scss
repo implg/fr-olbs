@@ -12,7 +12,7 @@
 		margin-bottom: 20px;
 	}
 
-	&__head {
+	&__img {
 		
 		img {
 			width: 175px;
@@ -22,7 +22,14 @@
 
 	&__content {
 		background-color: #FFF;
-		padding: 50px;
+		padding: 40px;
+		margin: 0;
 	}
 
+	&__img-bot {
+		margin-top: 100px;
+		img {
+			width: 217px;
+		}
+	}
 }
