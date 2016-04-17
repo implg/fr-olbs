@@ -84,6 +84,17 @@ h3, .h3 {
   text-align: center;
 }
 
+section ul {
+  padding-left: 0;
+    overflow: hidden;
+    margin-bottom: 25px;
+  li {
+    list-style: none;
+    background: url(../images/pages/product-content-marker.png) no-repeat 0 11px; 
+    padding-left: 13px;
+  }
+}
+
 .no-pad {
   padding: 0;
 }
@@ -590,4 +601,5 @@ h3, .h3 {
 @import "page-feedback-form";
 @import "page-product";
 @import "page-product-aqua";
+@import "page-product-laboratory";
 @import "media";

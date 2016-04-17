@@ -1,0 +1,79 @@
+.page-prod-laboratory {
+	background-color: $bg-gray;
+	color: #000;
+
+	.blue_text {
+		font-family: 'RobotoLight', sans-serif;
+		font-size: 1.250em;
+		color: #144579;
+		text-transform: uppercase;
+		padding-top: 8px;
+	}
+
+	ul {
+		li {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.page-prod-laboratory__item {
+	padding-top: 65px;
+	padding-bottom: 60px;
+
+	&-icon {
+		img {
+			margin-left: -14px;
+		}
+	}
+
+	&-text {
+		padding-left: 50px;
+		h3 {
+			font-size: 2.250em;
+			color: #144579;
+			text-transform: uppercase;
+			font-family: 'RobotoLight', sans-serif;
+		}
+	}
+}
+
+.laboratory__smartreach {
+	background-image: url(../images/pages/page-lab-smartreach-bg.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	padding-top: 85px;
+
+	h1 {
+		color: #009ad4;
+		text-transform: uppercase;
+		margin-bottom: 18px;
+		b {
+			font-family: "RobotoBold";
+		}
+	}
+
+	&-img {
+		width: 129px;
+	}
+}
+
+.laboratory__shopper {
+	background-color: #fff;
+	background-image: url(../images/pages/page-lab-shopper-bg.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: auto 100%;
+
+	h3 {
+		color: #0061ae;
+	}
+}
+
+.laboratory__big-data {
+	background-color: #fff;
+	background-image: url(../images/pages/page-lab-big-data-bg.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: auto 100%;
+}
