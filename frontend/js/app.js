@@ -42,4 +42,10 @@ $(document).ready(function() {
     new WOW().init({
         mobile: false
     });
+
+    // Product page line animate
+    setTimeout(function () {
+        $('.page-product__img-line3').slideDown(1200);
+    }, 2200);
+    
 });

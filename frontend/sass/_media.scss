@@ -318,6 +318,11 @@
       padding-right: 0;
       img {
         margin-left: -35px;
+        display: block;
+      }
+
+      &-icon1, &-icon2, &-icon3 {
+        display: none;
       }
 
       &-line1 {
@@ -878,6 +883,8 @@
 
     &__img {
       padding-bottom: 86px;
+      width: 270px;
+      height: 387px;
 
       img {
         margin-left: 0;
