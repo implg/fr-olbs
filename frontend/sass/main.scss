@@ -107,6 +107,7 @@ section ul {
   transition: all 0.3s;
   border: 1px solid $blue-color;
   display: inline-block;
+  letter-spacing: 1px;
 
   &:hover {
     text-decoration: none;
@@ -127,6 +128,7 @@ section ul {
   transition: all 0.3s;
   border: 1px solid #fff;
   display: inline-block;
+  letter-spacing: 1px;
 
   &:hover {
     text-decoration: none;
@@ -140,12 +142,13 @@ section ul {
 }
 
 .btn-prod {
-  padding: 12px 14px 12px 32px;
+  padding: 12px 36px 11px;
   border: 1px solid $blue-color;
   color: $blue-color;
   text-transform: uppercase;
   display: inline-block;
   transition: all 0.2s;
+  letter-spacing: 1px;
 
   &:hover {
     background: $blue-color;
@@ -157,12 +160,6 @@ section ul {
     }
   }
 
-}
-
-.btn-arrow {
-  @include sprite($btn-arrow);
-  display: inline-block;
-  margin-left: 11px;
 }
 
 // Header
@@ -186,7 +183,7 @@ section ul {
       display: inline-block;
       a {
         display: inline-block;
-        padding: 30px 10px;
+        padding: 30px 6px;
         color: #fff;
         font-size: 0.875em;
         text-transform: uppercase;
@@ -217,6 +214,36 @@ section ul {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.languages {
+  position: relative;
+  right: -5px;
+  padding: 0;
+  a {
+    display: inline-block;
+    margin: 26px 0;
+    padding: 3px 5px 1px 5px;
+    color: $blue-color;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &.active {
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 3px 4px 1px 4px;
+    }
+
+    &:nth-child(2) {
+      margin-left: -5px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 }
 
 // Mobile menu

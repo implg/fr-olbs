@@ -61,6 +61,14 @@
     }
   }
 
+  .languages {
+    text-align: right;
+    padding-right: 10px;
+    a {
+      margin: 13px 0;
+    }
+  }
+
   .diagram__item-1, .diagram__item-2, .diagram__item-3, .diagram__item-4, .diagram__item-5,
   .line-1, .line-2 {
     display: none;
@@ -346,7 +354,7 @@
     }
   }
 
-  // Page product-qua
+  // Page product-aqua
   .page-prod-aqua {
     background-position: -343px 0;
 
@@ -362,7 +370,16 @@
     &__content {
       background-color: #FFF;
       padding: 41px 19px;
+
+    p {
+      width: 100%;
     }
+
+    &-img {
+      right: 0;
+      left: -10px;
+    }
+  }
   }
 
 }
@@ -395,6 +412,10 @@
         width: 275px;
       }
     }
+  }
+
+  .languages {
+    padding-right: 20px;
   }
 
   .diagram {
@@ -515,6 +536,10 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  .languages {
+    padding-right: 25px;
   }
 
   .diagram {
@@ -664,6 +689,10 @@
         width: 210px;
       }
     }
+  }
+
+  .languages {
+    text-align: center;
   }
 
   .diagram {
@@ -950,6 +979,16 @@
         p:first-child {
           margin-top: 0;
         }
+
+        &-img {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      &-img {
+        display: none;
       }
     }
 

@@ -10,6 +10,9 @@
 		color: #0095d6;
 		text-transform: uppercase;
 		margin-bottom: 20px;
+		b {
+			font-family: "RobotoBold";
+		}
 	}
 
 	&__img {
@@ -24,6 +27,19 @@
 		background-color: #FFF;
 		padding: 40px;
 		margin: 0;
+
+		p {
+			line-height: 18px;
+			    width: 113%;
+		}
+
+		&-img {
+			width: 100%;
+			max-width: 100%;
+			margin-top: 6px;
+			position: relative;
+    		right: -35px;
+		}
 	}
 
 	&__img-bot {
