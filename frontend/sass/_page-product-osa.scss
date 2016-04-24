@@ -1,0 +1,166 @@
+ .page-osa {
+ 	ul {
+		li {
+			margin-bottom: 5px;
+			line-height: 22px;
+		}
+	}
+ }
+
+ .osa-top-section {
+ 	background-color: $bg-gray;
+ 	background-image: url(../images/pages/page-osa-top-section-bg.png);
+ 	background-position: left top;
+ 	background-repeat: no-repeat;
+	padding-top:80px;
+	padding-bottom: 60px;
+	color: #000;
+
+	h1 {
+		color: #009ad4;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+ 	&-img {
+		width: 220px;
+		margin-top: -10px;
+ 	}
+
+ 	b {
+ 		font-family: "RobotoBold";
+ 	}
+}
+
+.osa_bold {
+	font-family: "RobotoBold";
+	font-size: 1.250em;
+}
+
+.num {
+	font-family: "RobotoBold";
+	font-size: 1.500em;
+	display: inline-block;
+    margin-top: -9px;
+}
+
+ol {
+	list-style-type: none;
+	padding-left: 22px;
+	li {
+		margin-bottom: 15px;
+		span {
+			display: inline-block;
+		    margin-left: -22px;
+		    width: 22px;
+		    color: #009ad4;
+		    font-family: "RobotoBold";
+		}
+	}
+}
+
+.objective-project {
+	background-color: $main-color;
+	background-image: url();
+	background-position: right top;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+.analysis-strategy {
+	background-color: #009ad4;
+	background-image: url(../images/pages/page-osa-analysis-strategy-bg.png);
+	background-position: center top;
+	background-size: cover;
+	color: #fff;
+	padding-bottom: 50px;
+
+	h2, .h2 {
+		margin-top: 56px;
+	}
+}
+
+.how-does-platform {
+	background-color: $bg-gray;
+	background-image: url(../images/pages/page-osa-how-does-platform-bg.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.scheme {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	.arrow-1 {
+		position: absolute;
+		top: 82px;
+		left: 137px;
+		width: 0; //120px
+		height: 13px;
+		background-image: url(../images/scheme/arrow-0.svg);
+	}
+
+	.arrow-2 {
+		position: absolute;
+		top: 82px;
+		left: 400px;
+		width: 0; //120px
+		height: 13px;
+		background-image: url(../images/scheme/arrow-0.svg);
+	}
+
+	.arrow-3 {
+		position: absolute;
+		top: 82px;
+		left: 662px;
+		width: 0; //120px
+		height: 13px;
+		background-image: url(../images/scheme/arrow-0.svg);
+	}
+
+	.arrow-4-1 {
+		position: absolute;
+	    top: 150px;
+	    left: 792px;
+	    width: 43px;
+	    height: 0; //66px
+	    background-image: url(../images/scheme/arrow-2-1.svg);
+	    background-size: 100% 100%;
+	}
+
+	.arrow-4-2 {
+		position: absolute;
+	    top: 150px;
+	    left: 886px;
+	    width: 43px;
+	    height: 0; //66px
+	    background-image: url(../images/scheme/arrow-2-2.svg);
+	    background-size: 100% 100%;
+	}
+
+	.arrow-5 {
+		position: absolute;
+	    top: 321px;
+	    right: 339px;
+	    width: 0; //285px
+	    height: 65px;
+	    background-image: url(../images/scheme/arrow-4-new.svg);
+	    background-repeat: no-repeat;
+	    
+	}
+
+	.arrow-6 {
+		position: absolute;
+	    top: 256px;
+	    left: 72px;
+	    width: 196px;
+	    height: 123px;
+	    background-image: url(../images/scheme/arrow-4.svg);
+	    background-size: 100% 100%;
+	}
+}
