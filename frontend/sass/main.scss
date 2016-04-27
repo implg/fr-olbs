@@ -84,6 +84,16 @@ h3, .h3 {
   text-align: center;
 }
 
+.form-success {
+  font-family: 'RobotoBold';
+  color: $main-color;
+}
+
+.form-error {
+  font-family: 'RobotoBold';
+  color: red;
+}
+
 section ul {
   padding-left: 0;
   overflow: hidden;
@@ -476,21 +486,21 @@ section ul.white {
 // Section About Us
 
 .about-us {
-  background-color: $blue-color;
-  background-image: url(../images/abou-us-bg.png);
+  background-color: $bg-gray;
+  background-image: url(../images/about-us-bg-new.png);
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding: 80px 10px;
+  background-size: 100% 100%;
+  padding: 50px 10px;
   color: #000;
   
   .container {
-    background: #fff;
-    padding: 40px 145px 40px 50px;
-
     p {
-      margin-bottom: 0px;
-      margin-top: 4px;
+      margin-bottom: 6px;
+      margin-top: 0;
+      b {
+        font-family: "RobotoBold";
+      }
     }
   }
 
@@ -509,6 +519,9 @@ section ul.white {
     font-size: 2.250em;
     color: #fff;
     font-family: 'RobotoThin', sans-serif;
+    b{
+      font-family: 'RobotoBold', sans-serif;
+    }
   }
 
 }

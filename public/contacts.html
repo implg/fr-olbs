@@ -32,21 +32,21 @@
                         <a href="/"><img src="./images/logo.png" alt="Logo"></a>
                     </div>
                 </div>
-                <div class="col-md-9 hidden-sm hidden-xs">
+                <div class="col-md-10 hidden-sm hidden-xs">
                     <nav id="main-nav">
                         <ul>
-                            <li class="active"><a href="#">О компании</a></li>
-                            <li><a href="#">Как это работает</a></li>
-                            <li><a href="#">Решения</a></li>
-                            <li><a href="#">Наша команда</a></li>
-                            <li><a href="#">Наши клиенты</a></li>
-                            <li><a href="./contacts.html">Контакты</a></li>
+                             <li><a href="./index.html#about-us">О компании</a></li>
+                            <!--<li><a href="#">Как это работает</a></li>-->
+                            <li><a href="./index.html#products">Решения</a></li>
+                            <li><a href="./index.html#our-team">Наша команда</a></li>
+                            <li><a href="./index.html#partners">Наши партнеры</a></li>
+                            <li class="active"><a href="./contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-1 col-sm-3 col-xs-5 languages">
-                    <a href="#" class="active">Рус</a>
-                    <a href="#" >En</a> 
+                <div class="hidden-md hidden-lg col-sm-3 col-xs-5 languages">
+                    <!-- <a href="#" class="active">Рус</a>
+                    <a href="#" >En</a> -->
                 </div>
                 <div class="col-sm-1 col-xs-1 hidden-lg hidden-md text-right">
                     <div class="mobile-menu-tog">
@@ -74,18 +74,18 @@
                 <div class="col-md-8 ">
                     <p class="h1">Форма обратной связи</p>
                     <div class="message desk-hide"><span>*</span> Поля обязательные для заполнения</div>
-                    <form action="" method="post" class="form-contacts wow zoomIn">
+                    <form action="./mail.php" method="post" class="form-contacts wow zoomIn">
                         <div class="row feedback-form__form">
                             <div class="col-md-12 col-sm-12">
                                 <input type="text" name="name" placeholder="Имя *" required/>
-                                <input type="text" name="email" placeholder="E-mail *" required/>
+                                <input type="email" name="email" placeholder="E-mail *" required/>
                                 <input type="text" name="subject" placeholder="Тема *" required/>
                                 <textarea name="message" placeholder="Сообщение *" required></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-7 col-sm-12 col-xs-12">
-                                <input type="checkbox" id="send-me-copy" checked="checked" />
+                                <input type="checkbox" id="send-me-copy" checked="checked" name="send-me-copy" />
                                 <label for="send-me-copy">Отправить копию этого сообщения на ваш адрес</label>
                             </div>
                             <div class="col-md-5 hidden-sm hidden-xs text-right">
@@ -114,12 +114,12 @@
                 <div class="col-md-12">
                     <nav class="footer__nav">
                         <ul>
-                            <li class="active"><a href="#">О компании</a></li>
-                            <li><a href="#">Как это работает</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#">Решения</a></li>
-                            <li><a href="#">Наша команда</a></li>
-                            <li><a href="#">Наши клиенты</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="./index.html#about-us">О компании</a></li>
+                            <!--<li><a href="#">Как это работает</a></li>-->
+                            <li><a href="./index.html#products">Решения</a></li>
+                            <li><a href="./index.html#our-team">Наша команда</a></li>
+                            <li><a href="./index.html#partners">Наши партнеры</a></li>
+                            <li class="active"><a href="./contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>

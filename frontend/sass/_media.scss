@@ -142,14 +142,9 @@
   }
 
   .about-us {
-    background-position: -345px;
+    background-size: cover;
     .container {
       padding: 17px 44px 65px;
-      background: none;
-      color: #fff;
-      h2 {
-        color: #fff;
-      }
     }
   }
 
@@ -196,6 +191,10 @@
   .partners {
     padding-top: 7px;
     padding-bottom: 45px;
+
+    & .row > div {
+      min-height: 100px;
+    }
   }
 
   .our-team {
@@ -203,7 +202,7 @@
     background-size: cover;
     .white-btn {
       margin-top: 185px;
-      padding: 14px 10px;
+      padding: 14px 9px;
     }
     &__item {
       min-height: 305px
@@ -225,11 +224,11 @@
           width: 33.33333333%;
           float: left;
 
-          &:nth-child(even) {
+          &:nth-child(2), &:nth-child(5) {
             padding-left: 25px;
           }
 
-          &:nth-child(4) {
+          &:nth-child(3) {
             text-align: right;
           }
 
@@ -478,6 +477,12 @@
     }
   }
 
+  .our-team .white-btn {
+    margin-top: 0; //185px
+    margin-bottom: 50px;
+    padding: 14px 10px;
+  }
+
   .languages {
     padding-right: 20px;
   }
@@ -526,9 +531,7 @@
     .container  {
       padding: 0px 50px;
     }
-    &__nav ul li:nth-child(even) {
-        padding-left: 0;
-    }
+    
   }
 
   // Page contacts
@@ -835,6 +838,11 @@
       a {
         padding: 7px 9px;
       }
+    }
+
+    &__nav ul li {
+        padding-left: 0 !important;
+        text-align: left !important;
     }
   }
 
