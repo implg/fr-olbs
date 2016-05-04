@@ -68,6 +68,7 @@ ol {
 	color: #fff;
 	padding-top: 15px;
 	padding-bottom: 30px;
+	
 }
 
 .analysis-strategy {
@@ -90,27 +91,30 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 50px 0 85px;
+	h2, .h2 {
+		color: #000
+	}
 }
 
 .scheme {
 	position: relative;
 
 	img {
-		width: 100%;
+		width: 950px;
 	}
 
 	.arrow-1 {
 		position: absolute;
-		top: 82px;
-		left: 141px;
-		width: 120px; //120px
-		height: 13px;
+		top: 75px;
+    	left: 129px;
+    	width: 105px;
+    	height: 12px;
 		background-image: url(../images/scheme/arrow-0.png);
 		background-repeat: no-repeat;
 		span {
 			position: absolute;
-			top: -18px;
-		    left: 36px;
+			top: -19px;
+    		left: 32px;
 		    width: 50px;
 		    height: 50px;
 			background-image: url(../images/scheme/mini-icon-1.png);
@@ -122,16 +126,16 @@ ol {
 
 	.arrow-2 {
 		position: absolute;
-		top: 82px;
-		left: 404px;
+		top: 75px;
+		left: 369px;
 		width: 120px; //120px
 		height: 13px;
 		background-image: url(../images/scheme/arrow-0.png);
 		background-repeat: no-repeat;
 		span {
 			position: absolute;
-			top: -18px;
-		    left: 36px;
+			top: -19px;
+    		left: 32px;
 			width: 50px;
 			height: 50px;
 			background-image: url(../images/scheme/mini-icon-2.png);
@@ -142,8 +146,8 @@ ol {
 
 	.arrow-3 {
 		position: absolute;
-		top: 82px;
-		left: 666px;
+		top: 75px;
+		left: 608px;
 		width: 120px; //120px
 		height: 13px;
 		background-image: url(../images/scheme/arrow-0.png);
@@ -152,30 +156,30 @@ ol {
 
 	.arrow-4-1 {
 		position: absolute;
-	    top: 150px;
-	    left: 795px;
-	    width: 43px;
-	    height: 66px; //66px
+	    top: 136px;
+    	left: 725px;
+    	width: 33px;
+    	height: 56px;
 	    background-image: url(../images/scheme/arrow-2-1.png);
 	    background-repeat: no-repeat;
 	}
 
 	.arrow-4-2 {
 		position: absolute;
-	    top: 150px;
-	    left: 886px;
-	    width: 43px;
-	    height: 66px; //66px
+	    top: 136px;
+	    left: 815px;
+	    width: 33px;
+	    height: 56px; //66px
 	    background-image: url(../images/scheme/arrow-2-2.png);
 	    background-repeat: no-repeat;
 	}
 
 	.arrow-5 {
 		position: absolute;
-	    top: 326px;
-	    right: 337px;
-	    width: 285px;
-	    height: 54px;
+	    top: 299px;
+    	left: 382px;
+   	 	width: 260px;
+    	height: 49px;
 	    background-image: url(../images/scheme/arrow-3.png);
 	    background-repeat: no-repeat;
 	    
@@ -183,10 +187,10 @@ ol {
 
 	.arrow-6 {
 		position: absolute;
-	    top: 256px;
-	    left: 72px;
-	    width: 196px;
-	    height: 123px;
+	    top: 237px;
+    	left: 69px;
+	    width: 176px;
+	    height: 110px;
 	    background-image: url(../images/scheme/arrow-4.png);
 	    background-repeat: no-repeat;
 	}
@@ -200,43 +204,43 @@ ol {
 
 	.scheme-text-1{
 		@extend .scheme-text;
-		top: 176px;
-    	left: 21px;
+		top: 165px;
+    	left: 17px;
 	}
 	.scheme-text-2{
 		@extend .scheme-text;
-		top: 176px;
-    	left: 250px;
+		top: 165px;
+    	left: 219px;
     	width: 175px;
 	}
 	.scheme-text-3{
 		@extend .scheme-text;
-		top: 176px;
-    	left: 512px;
+		top: 165px;
+    	left: 463px;
     	width: 170px;
 	}
 	.scheme-text-4{
 		@extend .scheme-text;
 		top: -80px;
-	    left: 785px;
-	    width: 150px;
+    	left: 711px;
+    	width: 150px;
 	}
 	.scheme-text-5-a{
 		@extend .scheme-text;
-		bottom: 35px;
-    	right: 11px;
+		bottom: 25px;
+    	left: 823px;
     	width: 125px;
 	}
 	.scheme-text-5-b{
 		@extend .scheme-text;
-		bottom: 15px;
-    	right: 224px;
+		bottom: 5px;
+    	left: 629px;
     	width: 122px;
 	}
 	.scheme-text-6{
 		@extend .scheme-text;
-		bottom: -58px;
-    	left: 222px;
+		bottom: -60px;
+    	left: 191px;
     	width: 235px;
 	}
 }

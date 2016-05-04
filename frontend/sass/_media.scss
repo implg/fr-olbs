@@ -209,6 +209,37 @@
     }
   }
 
+  // .footer {
+
+  //   padding-top: 36px;
+
+  //   .container  {
+  //     padding: 0px 70px;
+  //   }
+
+  //   &__nav {
+  //     padding-bottom: 30px;
+  //     ul {
+  //       li {
+  //         width: 33.33333333%;
+  //         float: left;
+
+  //         &:nth-child(2), &:nth-child(5) {
+  //           padding-left: 25px;
+  //         }
+
+  //         &:nth-child(3) {
+  //           text-align: right;
+  //         }
+
+  //         a {
+  //           padding: 7px 10px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
   .footer {
 
     padding-top: 36px;
@@ -224,11 +255,11 @@
           width: 33.33333333%;
           float: left;
 
-          &:nth-child(2), &:nth-child(5) {
+          &:nth-child(even) {
             padding-left: 25px;
           }
 
-          &:nth-child(3) {
+          &:nth-child(4) {
             text-align: right;
           }
 
@@ -239,6 +270,7 @@
       }
     }
   }
+
 
   .page .container {
     max-width: 100%;
@@ -383,6 +415,7 @@
       &-img {
         right: 0;
         left: -10px;
+        margin-top: 5px;
       }
     }
   }
@@ -443,6 +476,56 @@
     background-image: url(../images/pages/page-lab-shopper-bg.png);
     background-position: -375px top;
     background-repeat: no-repeat;
+  }
+
+  // Page product osa
+  .osa-top-section {
+    padding-top:40px;
+    padding-bottom: 60px;
+    background-position-x: -280px;
+
+    &-img {
+      width: 170px;
+      margin-top: 5px;
+    }
+
+    h1 {
+      line-height: 40px;
+      width: 185px;
+    }
+  }
+
+  .objective-project {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      background-position-x: 295px;
+  }
+
+  .how-does-platform {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-position-x: -323px;
+
+    .scheme-mob img {
+      width: 100%;
+    }
+  }
+
+  .osa-top-section .container, .how-does-platform .container, .objective-project .container, .analysis-strategy .container{
+    padding: 0px 70px;
+  }
+
+  .analysis-strategy {
+    background-image: url(../images/pages/page-osa-how-does-platform-bg.png);
+    background-position-x: -615px;
+    padding-bottom: 20px;
+    h2, .h2 {
+      margin-top: 36px;
+    }
+  }
+
+  .num {
+    margin-top: 0;
   }
 
 }
@@ -527,11 +610,20 @@
     }
   }
 
+  // .footer {
+  //   .container  {
+  //     padding: 0px 50px;
+  //   }
+    
+  // }
+
   .footer {
     .container  {
       padding: 0px 50px;
     }
-    
+    &__nav ul li:nth-child(even) {
+        padding-left: 0;
+    }
   }
 
   // Page contacts
@@ -577,6 +669,15 @@
     .page-prod-laboratory__item {
       padding-top: 20px;
     }
+  }
+
+  // Page product laboratory
+  .osa-top-section .container, .how-does-platform .container, .objective-project .container, .analysis-strategy .container{
+    padding: 0px 50px;
+  }
+
+  .how-does-platform .scheme-mob img {
+      width: 107%;
   }
 
 }
@@ -742,6 +843,38 @@
   .page-prod-laboratory .container {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  // Page product osa
+  .osa-top-section .container, .how-does-platform .container, .objective-project .container, .analysis-strategy .container{
+    padding: 0px 30px;
+  }
+
+  .how-does-platform{
+    img {
+      width: 110%;
+      margin-left: -15px;
+    } 
+    h2 {
+      width: 105%;
+    } 
+  }
+
+
+  .osa-top-section {
+    background-position-x: -500px;
+  }
+
+  .objective-project {
+    background-position-x: 415px;
+  }
+
+  .page-osa {
+    line-height: 28px;
+  }
+
+  .analysis-strategy {
+    background-image: none;
   }
 
 }
@@ -1146,6 +1279,50 @@
   .laboratory__big-data {
     background-position: 160px top;
   }
+
+  // Page product osa
+  .osa-top-section {
+    padding-bottom: 10px;
+    h1 {
+      width: 170px;
+    }
+  }
+
+  .osa-top-section-img {
+    width: 118px;
+  }
+
+  .objective-project {
+    padding-top: 20px;
+  }
+
+  .how-does-platform {
+    display: none;
+  }
+
+  .osa-top-section .container, .how-does-platform .container, .objective-project .container, .analysis-strategy .container{
+    padding: 0px  18px;
+  }
+
+  .page-osa {
+    line-height: 20px;
+    font-size: 0.875em;
+    b {
+      font-family: "Roboto" !important;
+      font-weight: normal;
+    }
+  }
+
+  .osa_bold {
+    font-family: "Roboto";
+  }
+
+  .analysis-strategy {
+    h2, .h2 {
+      line-height: 37px;
+    }
+  }
+
 }
 
 /* Custom, iPhone Retina */
